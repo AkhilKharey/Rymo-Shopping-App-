@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>eaa820dbfbd24e699453a44c88c1a555</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background: #f7d4e2;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="model-that-predicts-the-amount-spent-by-customers-based-on-their-user-data" class="cell markdown">
+<h1>Model that predicts the amount spent by customers based on their user data</h1>
+</section>
+<div class="cell code" data-execution_count="126">
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Importing exploratory data analysis tools</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="127" data-scrolled="true">
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Reading the csv file using pandas and making a dataframe</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>dataset <span class="op">=</span> pd.read_csv(<span class="st">&quot;Ecommerce_Customers&quot;</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>dataset.head(<span class="dv">10</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="127">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Email</th>
+      <th>Address</th>
+      <th>Avatar</th>
+      <th>Avg. Session Length</th>
+      <th>Time on App</th>
+      <th>Time on Website</th>
+      <th>Length of Membership</th>
+      <th>Yearly Amount Spent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>mstephenson@fernandez.com</td>
+      <td>835 Frank Tunnel\nWrightmouth, MI 82180-9605</td>
+      <td>Violet</td>
+      <td>34.497268</td>
+      <td>12.655651</td>
+      <td>39.577668</td>
+      <td>4.082621</td>
+      <td>587.951054</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>hduke@hotmail.com</td>
+      <td>4547 Archer Common\nDiazchester, CA 06566-8576</td>
+      <td>DarkGreen</td>
+      <td>31.926272</td>
+      <td>11.109461</td>
+      <td>37.268959</td>
+      <td>2.664034</td>
+      <td>392.204933</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>pallen@yahoo.com</td>
+      <td>24645 Valerie Unions Suite 582\nCobbborough, D...</td>
+      <td>Bisque</td>
+      <td>33.000915</td>
+      <td>11.330278</td>
+      <td>37.110597</td>
+      <td>4.104543</td>
+      <td>487.547505</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>riverarebecca@gmail.com</td>
+      <td>1414 David Throughway\nPort Jason, OH 22070-1220</td>
+      <td>SaddleBrown</td>
+      <td>34.305557</td>
+      <td>13.717514</td>
+      <td>36.721283</td>
+      <td>3.120179</td>
+      <td>581.852344</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>mstephens@davidson-herman.com</td>
+      <td>14023 Rodriguez Passage\nPort Jacobville, PR 3...</td>
+      <td>MediumAquaMarine</td>
+      <td>33.330673</td>
+      <td>12.795189</td>
+      <td>37.536653</td>
+      <td>4.446308</td>
+      <td>599.406092</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>alvareznancy@lucas.biz</td>
+      <td>645 Martha Park Apt. 611\nJeffreychester, MN 6...</td>
+      <td>FloralWhite</td>
+      <td>33.871038</td>
+      <td>12.026925</td>
+      <td>34.476878</td>
+      <td>5.493507</td>
+      <td>637.102448</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>katherine20@yahoo.com</td>
+      <td>68388 Reyes Lights Suite 692\nJosephbury, WV 9...</td>
+      <td>DarkSlateBlue</td>
+      <td>32.021596</td>
+      <td>11.366348</td>
+      <td>36.683776</td>
+      <td>4.685017</td>
+      <td>521.572175</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>awatkins@yahoo.com</td>
+      <td>Unit 6538 Box 8980\nDPO AP 09026-4941</td>
+      <td>Aqua</td>
+      <td>32.739143</td>
+      <td>12.351959</td>
+      <td>37.373359</td>
+      <td>4.434273</td>
+      <td>549.904146</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>vchurch@walter-martinez.com</td>
+      <td>860 Lee Key\nWest Debra, SD 97450-0495</td>
+      <td>Salmon</td>
+      <td>33.987773</td>
+      <td>13.386235</td>
+      <td>37.534497</td>
+      <td>3.273434</td>
+      <td>570.200409</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>bonnie69@lin.biz</td>
+      <td>PSC 2734, Box 5255\nAPO AA 98456-7482</td>
+      <td>Brown</td>
+      <td>31.936549</td>
+      <td>11.814128</td>
+      <td>37.145168</td>
+      <td>3.202806</td>
+      <td>427.199385</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="cell code" data-execution_count="128" data-scrolled="true">
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Reading the info on the data types and non null count</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>dataset.info()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 500 entries, 0 to 499
+Data columns (total 8 columns):
+ #   Column                Non-Null Count  Dtype  
+---  ------                --------------  -----  
+ 0   Email                 500 non-null    object 
+ 1   Address               500 non-null    object 
+ 2   Avatar                500 non-null    object 
+ 3   Avg. Session Length   500 non-null    float64
+ 4   Time on App           500 non-null    float64
+ 5   Time on Website       500 non-null    float64
+ 6   Length of Membership  500 non-null    float64
+ 7   Yearly Amount Spent   500 non-null    float64
+dtypes: float64(5), object(3)
+memory usage: 31.4+ KB
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="129" data-scrolled="true">
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Checking if there are empty datd fields</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>dataset.isna().<span class="bu">sum</span>()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="129">
+<pre><code>Email                   0
+Address                 0
+Avatar                  0
+Avg. Session Length     0
+Time on App             0
+Time on Website         0
+Length of Membership    0
+Yearly Amount Spent     0
+dtype: int64</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="130">
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>dataset.columns</span></code></pre></div>
+<div class="output execute_result" data-execution_count="130">
+<pre><code>Index([&#39;Email&#39;, &#39;Address&#39;, &#39;Avatar&#39;, &#39;Avg. Session Length&#39;, &#39;Time on App&#39;,
+       &#39;Time on Website&#39;, &#39;Length of Membership&#39;, &#39;Yearly Amount Spent&#39;],
+      dtype=&#39;object&#39;)</code></pre>
+</div>
+</div>
+<section id="some-columns-like-email-and-home-addresses-are-not-necessary-so-well-remove-them-from-the-dataset" class="cell markdown">
+<h3>Some columns like Email and home addresses are not necessary, so we'll remove them from the dataset</h3>
+</section>
+<div class="cell code" data-execution_count="131">
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>new_df<span class="op">=</span>dataset.drop(<span class="st">&quot;Email&quot;</span>, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>new_df<span class="op">=</span>new_df.drop(<span class="st">&quot;Avatar&quot;</span>,axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>new_df<span class="op">=</span>new_df.drop(<span class="st">&quot;Address&quot;</span>,axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>new_df</span></code></pre></div>
+<div class="output execute_result" data-execution_count="131">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Avg. Session Length</th>
+      <th>Time on App</th>
+      <th>Time on Website</th>
+      <th>Length of Membership</th>
+      <th>Yearly Amount Spent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>34.497268</td>
+      <td>12.655651</td>
+      <td>39.577668</td>
+      <td>4.082621</td>
+      <td>587.951054</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>31.926272</td>
+      <td>11.109461</td>
+      <td>37.268959</td>
+      <td>2.664034</td>
+      <td>392.204933</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>33.000915</td>
+      <td>11.330278</td>
+      <td>37.110597</td>
+      <td>4.104543</td>
+      <td>487.547505</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>34.305557</td>
+      <td>13.717514</td>
+      <td>36.721283</td>
+      <td>3.120179</td>
+      <td>581.852344</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>33.330673</td>
+      <td>12.795189</td>
+      <td>37.536653</td>
+      <td>4.446308</td>
+      <td>599.406092</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>495</th>
+      <td>33.237660</td>
+      <td>13.566160</td>
+      <td>36.417985</td>
+      <td>3.746573</td>
+      <td>573.847438</td>
+    </tr>
+    <tr>
+      <th>496</th>
+      <td>34.702529</td>
+      <td>11.695736</td>
+      <td>37.190268</td>
+      <td>3.576526</td>
+      <td>529.049004</td>
+    </tr>
+    <tr>
+      <th>497</th>
+      <td>32.646777</td>
+      <td>11.499409</td>
+      <td>38.332576</td>
+      <td>4.958264</td>
+      <td>551.620145</td>
+    </tr>
+    <tr>
+      <th>498</th>
+      <td>33.322501</td>
+      <td>12.391423</td>
+      <td>36.840086</td>
+      <td>2.336485</td>
+      <td>456.469510</td>
+    </tr>
+    <tr>
+      <th>499</th>
+      <td>33.715981</td>
+      <td>12.418808</td>
+      <td>35.771016</td>
+      <td>2.735160</td>
+      <td>497.778642</td>
+    </tr>
+  </tbody>
+</table>
+<p>500 rows × 5 columns</p>
+</div>
+</div>
+</div>
+<div class="cell code" data-execution_count="132" data-scrolled="true">
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>new_df.sort_values(by<span class="op">=</span><span class="st">&quot;Avg. Session Length&quot;</span>,inplace<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>new_df</span></code></pre></div>
+<div class="output execute_result" data-execution_count="132">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Avg. Session Length</th>
+      <th>Time on App</th>
+      <th>Time on Website</th>
+      <th>Length of Membership</th>
+      <th>Yearly Amount Spent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>12</th>
+      <td>29.532429</td>
+      <td>10.961298</td>
+      <td>37.420216</td>
+      <td>4.046423</td>
+      <td>408.640351</td>
+    </tr>
+    <tr>
+      <th>312</th>
+      <td>30.393185</td>
+      <td>11.802986</td>
+      <td>36.315763</td>
+      <td>2.083814</td>
+      <td>319.928870</td>
+    </tr>
+    <tr>
+      <th>299</th>
+      <td>30.492537</td>
+      <td>11.562936</td>
+      <td>35.976565</td>
+      <td>1.481617</td>
+      <td>282.471246</td>
+    </tr>
+    <tr>
+      <th>330</th>
+      <td>30.574364</td>
+      <td>11.351049</td>
+      <td>37.088847</td>
+      <td>4.078308</td>
+      <td>442.064414</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>30.737720</td>
+      <td>12.636606</td>
+      <td>36.213763</td>
+      <td>3.357847</td>
+      <td>461.780742</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>257</th>
+      <td>35.530904</td>
+      <td>11.379257</td>
+      <td>36.636104</td>
+      <td>4.029454</td>
+      <td>574.747220</td>
+    </tr>
+    <tr>
+      <th>488</th>
+      <td>35.630854</td>
+      <td>12.125402</td>
+      <td>38.187764</td>
+      <td>4.019051</td>
+      <td>597.739879</td>
+    </tr>
+    <tr>
+      <th>396</th>
+      <td>35.742670</td>
+      <td>10.889828</td>
+      <td>35.565436</td>
+      <td>6.115199</td>
+      <td>669.987141</td>
+    </tr>
+    <tr>
+      <th>390</th>
+      <td>35.860237</td>
+      <td>11.730661</td>
+      <td>36.882149</td>
+      <td>3.416210</td>
+      <td>546.556667</td>
+    </tr>
+    <tr>
+      <th>154</th>
+      <td>36.139662</td>
+      <td>12.050267</td>
+      <td>36.959643</td>
+      <td>3.864861</td>
+      <td>595.803819</td>
+    </tr>
+  </tbody>
+</table>
+<p>500 rows × 5 columns</p>
+</div>
+</div>
+</div>
+<div class="cell code" data-execution_count="133">
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>new_df.T</span></code></pre></div>
+<div class="output execute_result" data-execution_count="133">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>12</th>
+      <th>312</th>
+      <th>299</th>
+      <th>330</th>
+      <th>15</th>
+      <th>303</th>
+      <th>199</th>
+      <th>163</th>
+      <th>482</th>
+      <th>203</th>
+      <th>...</th>
+      <th>205</th>
+      <th>377</th>
+      <th>260</th>
+      <th>458</th>
+      <th>436</th>
+      <th>257</th>
+      <th>488</th>
+      <th>396</th>
+      <th>390</th>
+      <th>154</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Avg. Session Length</th>
+      <td>29.532429</td>
+      <td>30.393185</td>
+      <td>30.492537</td>
+      <td>30.574364</td>
+      <td>30.737720</td>
+      <td>30.816201</td>
+      <td>30.836433</td>
+      <td>30.879484</td>
+      <td>30.971676</td>
+      <td>31.047222</td>
+      <td>...</td>
+      <td>34.967610</td>
+      <td>35.037450</td>
+      <td>35.039283</td>
+      <td>35.371876</td>
+      <td>35.433165</td>
+      <td>35.530904</td>
+      <td>35.630854</td>
+      <td>35.742670</td>
+      <td>35.860237</td>
+      <td>36.139662</td>
+    </tr>
+    <tr>
+      <th>Time on App</th>
+      <td>10.961298</td>
+      <td>11.802986</td>
+      <td>11.562936</td>
+      <td>11.351049</td>
+      <td>12.636606</td>
+      <td>11.851399</td>
+      <td>13.100110</td>
+      <td>13.280432</td>
+      <td>11.731364</td>
+      <td>11.199661</td>
+      <td>...</td>
+      <td>13.919494</td>
+      <td>11.935935</td>
+      <td>14.426491</td>
+      <td>10.572467</td>
+      <td>11.912210</td>
+      <td>11.379257</td>
+      <td>12.125402</td>
+      <td>10.889828</td>
+      <td>11.730661</td>
+      <td>12.050267</td>
+    </tr>
+    <tr>
+      <th>Time on Website</th>
+      <td>37.420216</td>
+      <td>36.315763</td>
+      <td>35.976565</td>
+      <td>37.088847</td>
+      <td>36.213763</td>
+      <td>36.925043</td>
+      <td>35.907721</td>
+      <td>36.936159</td>
+      <td>36.074551</td>
+      <td>38.688709</td>
+      <td>...</td>
+      <td>37.952013</td>
+      <td>35.783924</td>
+      <td>37.374184</td>
+      <td>36.862183</td>
+      <td>36.089644</td>
+      <td>36.636104</td>
+      <td>38.187764</td>
+      <td>35.565436</td>
+      <td>36.882149</td>
+      <td>36.959643</td>
+    </tr>
+    <tr>
+      <th>Length of Membership</th>
+      <td>4.046423</td>
+      <td>2.083814</td>
+      <td>1.481617</td>
+      <td>4.078308</td>
+      <td>3.357847</td>
+      <td>1.084585</td>
+      <td>3.361613</td>
+      <td>3.585161</td>
+      <td>4.426364</td>
+      <td>3.088764</td>
+      <td>...</td>
+      <td>5.066697</td>
+      <td>3.310150</td>
+      <td>3.930615</td>
+      <td>4.198349</td>
+      <td>4.000964</td>
+      <td>4.029454</td>
+      <td>4.019051</td>
+      <td>6.115199</td>
+      <td>3.416210</td>
+      <td>3.864861</td>
+    </tr>
+    <tr>
+      <th>Yearly Amount Spent</th>
+      <td>408.640351</td>
+      <td>319.928870</td>
+      <td>282.471246</td>
+      <td>442.064414</td>
+      <td>461.780742</td>
+      <td>266.086341</td>
+      <td>467.501900</td>
+      <td>490.206600</td>
+      <td>494.638610</td>
+      <td>392.497399</td>
+      <td>...</td>
+      <td>712.396327</td>
+      <td>538.941975</td>
+      <td>640.187740</td>
+      <td>537.915753</td>
+      <td>583.079636</td>
+      <td>574.747220</td>
+      <td>597.739879</td>
+      <td>669.987141</td>
+      <td>546.556667</td>
+      <td>595.803819</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 500 columns</p>
+</div>
+</div>
+</div>
+<div class="cell code" data-execution_count="134">
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>fig,ax <span class="op">=</span>plt.subplots(figsize<span class="op">=</span>(<span class="dv">10</span>,<span class="dv">10</span>))</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>ax.plot(new_df[<span class="st">&quot;Avg. Session Length&quot;</span>],new_df[<span class="st">&quot;Yearly Amount Spent&quot;</span>])<span class="op">;</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co"># With increase in average session length the yearly amount spent generally increases.</span></span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_60908dee9dec4d1386cb295a3eb42936/fd0d5378c394c81f59e15b6b69ae1ac36955327e.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="135">
+<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>dataset[<span class="st">&quot;Yearly Amount Spent&quot;</span>].hist(figsize<span class="op">=</span>(<span class="dv">10</span>,<span class="dv">6</span>),</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>                                   color<span class="op">=</span><span class="st">&quot;green&quot;</span>)<span class="op">;</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="co">#The maximum amount of people pay around  $ 450-500 in yearly amount so on average a person is likely to be found in this range. </span></span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_60908dee9dec4d1386cb295a3eb42936/ba92616b9a2e76f94ba4dee7d2023811417b7c31.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="136">
+<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>correation_matrix <span class="op">=</span> new_df.corr()</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>fig,ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">10</span>,<span class="dv">6</span>))</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>ax <span class="op">=</span> sns.heatmap(data<span class="op">=</span>correation_matrix,</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>                annot<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>                linewidths<span class="op">=</span><span class="fl">0.45</span>,</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>                fmt<span class="op">=</span><span class="st">&quot;0.2f&quot;</span>,</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>                cmap<span class="op">=</span><span class="st">&quot;YlGnBu&quot;</span>)</span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_60908dee9dec4d1386cb295a3eb42936/14723cea22b9f5ca2cd5c5533414b8abeaab1603.png" /></p>
+</div>
+</div>
+<section id="the-above-heatmap-shows-us-that-the-yearly-amount-spent-is-most-dependent-on-length-of-membership" class="cell markdown">
+<h3>The above heatmap shows us that the yearly amount spent is most dependent on length of membership</h3>
+</section>
+<div class="cell code" data-execution_count="137">
+<div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">35</span>,<span class="dv">15</span>))</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>ax.scatter(new_df[<span class="st">&quot;Length of Membership&quot;</span>],new_df[<span class="st">&quot;Yearly Amount Spent&quot;</span>],c<span class="op">=</span><span class="st">&quot;green&quot;</span>)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>ax.scatter(new_df[<span class="st">&quot;Time on App&quot;</span>],new_df[<span class="st">&quot;Yearly Amount Spent&quot;</span>],c<span class="op">=</span><span class="st">&quot;red&quot;</span>)</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>ax.scatter(new_df[<span class="st">&quot;Avg. Session Length&quot;</span>],new_df[<span class="st">&quot;Yearly Amount Spent&quot;</span>],c<span class="op">=</span><span class="st">&quot;black&quot;</span>)</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>ax.scatter(new_df[<span class="st">&quot;Time on Website&quot;</span>],new_df[<span class="st">&quot;Yearly Amount Spent&quot;</span>],c<span class="op">=</span><span class="st">&quot;blue&quot;</span>)</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="op">;</span></span></code></pre></div>
+<div class="output execute_result" data-execution_count="137">
+<pre><code>&#39;&#39;</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="vertopal_60908dee9dec4d1386cb295a3eb42936/83d29ae6b87cfbd818c5641978e989cd8dc3c8de.png" /></p>
+</div>
+</div>
+<section id="a-very-good-relationship-can-be-seen-with-length-of-membership-and-yearly-amount-spent" class="cell markdown">
+<h3>A very good relationship can be seen with length of membership and yearly amount spent</h3>
+</section>
+<section id="modelling" class="cell markdown">
+<h1>Modelling</h1>
+</section>
+<div class="cell code" data-execution_count="138">
+<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Splitting the data into X and y</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> new_df.drop(<span class="st">&quot;Yearly Amount Spent&quot;</span>, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> new_df[<span class="st">&quot;Yearly Amount Spent&quot;</span>]</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="139">
+<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Splitting it into train and test</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>X_train,X_test,y_train,y_test <span class="op">=</span> train_test_split(X, y ,test_size<span class="op">=</span><span class="fl">0.2</span>,random_state<span class="op">=</span><span class="dv">0</span>)</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="140">
+<div class="sourceCode" id="cb19"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>y_train</span></code></pre></div>
+<div class="output execute_result" data-execution_count="140">
+<pre><code>435    571.216005
+134    407.804031
+111    492.945053
+81     462.897636
+199    467.501900
+          ...    
+145    505.771140
+228    458.376911
+226    547.110982
+340    501.122492
+142    463.923513
+Name: Yearly Amount Spent, Length: 400, dtype: float64</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="141">
+<div class="sourceCode" id="cb21"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LinearRegression</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="142">
+<div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>linearreg <span class="op">=</span> LinearRegression()</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="143">
+<div class="sourceCode" id="cb23"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>linearreg.fit(X_train, y_train)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="143">
+<style>#sk-container-id-2 {color: black;background-color: white;}#sk-container-id-2 pre{padding: 0;}#sk-container-id-2 div.sk-toggleable {background-color: white;}#sk-container-id-2 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-2 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-2 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-2 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-2 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-2 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-2 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-2 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-2 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-2 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-2 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-2 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-2 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-2 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-2 div.sk-item {position: relative;z-index: 1;}#sk-container-id-2 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-2 div.sk-item::before, #sk-container-id-2 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-2 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-2 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-2 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-2 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-2 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-2 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-2 div.sk-label-container {text-align: center;}#sk-container-id-2 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-2 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-2" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>LinearRegression()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-2" type="checkbox" checked><label for="sk-estimator-id-2" class="sk-toggleable__label sk-toggleable__label-arrow">LinearRegression</label><div class="sk-toggleable__content"><pre>LinearRegression()</pre></div></div></div></div></div>
+</div>
+</div>
+<div class="cell code" data-execution_count="144">
+<div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>y_preds <span class="op">=</span> linearreg.predict(X_test)</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>y_preds</span></code></pre></div>
+<div class="output execute_result" data-execution_count="144">
+<pre><code>array([438.27857925, 598.45307221, 725.08773477, 558.16611705,
+       580.30693459, 422.58351524, 580.03623958, 527.45601959,
+       676.51356522, 480.81764396, 503.61955311, 615.54451874,
+       488.48435682, 471.87389986, 510.33124626, 421.2722964 ,
+       542.43071885, 516.37773214, 516.18061058, 468.69344142,
+       507.88824643, 479.02622713, 547.95928594, 444.78911241,
+       548.22543726, 567.93495001, 426.76376082, 400.65114615,
+       529.80340453, 601.5289068 , 552.40102453, 477.21704631,
+       411.03018928, 562.8232752 , 445.12843956, 666.77544765,
+       512.35816494, 525.61862937, 507.37468765, 505.41014983,
+       523.08235998, 396.86906604, 498.02365129, 503.66322433,
+       508.1721535 , 332.07898923, 481.40685183, 492.80198254,
+       554.2845388 , 445.75686545, 313.3683179 , 511.84711805,
+       535.90535671, 569.52620439, 504.51720008, 509.09834616,
+       531.25810767, 596.08119475, 314.13358619, 449.63179093,
+       455.51001672, 413.81676579, 455.78087099, 283.51864251,
+       508.42897632, 558.26104341, 494.18325497, 550.41488436,
+       500.4784115 , 447.75068677, 401.42050716, 431.49920306,
+       634.18475888, 562.91714132, 449.33130762, 499.01949916,
+       552.58081843, 478.55105203, 531.43517453, 445.50056252,
+       482.33090798, 472.82115992, 572.43850288, 684.51070446,
+       365.99699338, 483.50544802, 431.59996316, 305.70744859,
+       493.87433731, 558.61658731, 543.04141451, 428.56276959,
+       544.48119503, 484.24051051, 522.98751662, 519.08687835,
+       397.83058885, 434.25839229, 389.68910432, 542.21828201])</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="150">
+<div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>y_test</span></code></pre></div>
+<div class="output execute_result" data-execution_count="150">
+<pre><code>16     457.847696
+264    614.729638
+50     725.584814
+213    558.427257
+341    592.688453
+          ...    
+370    521.240780
+463    392.285244
+433    434.144202
+306    387.534716
+73     534.777188
+Name: Yearly Amount Spent, Length: 100, dtype: float64</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="149">
+<div class="sourceCode" id="cb28"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>linearreg.score(X_test, y_test)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="149">
+<pre><code>0.9822838578191436</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="152">
+<div class="sourceCode" id="cb30"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>fig, ax<span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">10</span>,<span class="dv">6</span>))</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>ax.scatter(y_test, y_preds)<span class="op">;</span></span></code></pre></div>
+<div class="output display_data">
+<p><img src="vertopal_60908dee9dec4d1386cb295a3eb42936/1e2744d8944047cb71f9aebf746504df817b2d2f.png" /></p>
+</div>
+</div>
+<div class="cell code">
+<div class="sourceCode" id="cb31"><pre class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+</div>
+</body>
+</html>
